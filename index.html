@@ -6,14 +6,32 @@
   <title>CSS Tutorial</title>
   <style>
     * {box-sizing: border-box;}
-    div {font-size: 0; padding-top: 60px; margin: 0 auto;}
+    
+    a.example{
+      display: block;
+      width: 200px;
+      text-align: center;
+      margin: 0 auto;
+      font-family: Helvetica;
+      text-decoration: none;
+      color: #8e44ad;
+      background: #ddd;
+      padding: 10px;
+    }
+    a.example:hover{
+      background: #8e44ad;
+      color: #ddd;
+      padding: 10px;
+    }
+
+    div {font-size: 0; padding-top: 20px; margin: 0 auto;}
     div > * {
       display: block;
       border: #ddd 1px solid;
       vertical-align: middle;
       text-align: left;
       width: 220px; height: 220px;
-      margin: 10px auto;
+      margin: 5px auto;
       font-size: 40px;
       text-decoration: none;
       color: #333;
@@ -22,35 +40,36 @@
       border-radius: 50%;
     }
     
-    a:nth-child(1){
+    div a:nth-child(1){
       padding-top: 50px;
       padding-left: 45px;
     }
 
-    a:nth-child(2){
+    div a:nth-child(2){
       padding-top: 55px;
       padding-left: 33px;
     }
 
-     a:nth-child(3){
+     div a:nth-child(3){
       padding-top: 30px;
       padding-left: 33px;
     }
 
-    a:hover{color: #fff;}
-    a:nth-child(1):hover{
+    div a:hover{color: #fff;}
+    div a:nth-child(1):hover{
       background: #e74c3c;
     }
-    a:nth-child(2):hover{
+    div a:nth-child(2):hover{
       background: #f1c40f;
     }
-    a:nth-child(3):hover{
+    div a:nth-child(3):hover{
       background: #2ecc71;
     }
 
   </style>
 </head>
 <body>
+  <a class="example" href="./example.html">Original Example</a>
   <div>  
     <a href="./html-only.html">
       &nbsp;HTML<br> 
