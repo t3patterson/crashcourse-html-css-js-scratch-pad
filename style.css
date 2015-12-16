@@ -1,0 +1,166 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.header-topic{
+  padding-left: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.blog-post {
+  margin: 0 auto;
+  width: 800px;
+}
+
+h1 {
+  font-family: Palatino;
+  font-weight: 200;
+}
+
+
+.title-area {
+  margin-bottom: 20px;
+}
+
+/*Social AREA*/
+.social {
+  margin-bottom: 22px;
+}
+.social > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.share-count {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.share-count .number {
+  color: green;
+  font-size: 72px;
+  line-height: 55px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.share-count .text{
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.social .share-fb,
+.social .share-tw,
+.social .more {
+  color: #fff;
+  padding: 0 15px;
+  line-height: 40px;
+  border-radius: 4px;
+  border: none;
+}
+
+.social .share-tw,
+.social .share-fb{
+  font-size: 12px;
+}
+
+.social .share-fb{
+  background: #36a;
+}
+
+.social .share-tw{
+  background: #6ce ;
+}
+
+.social .more {
+  background: #999;
+  font-size: 22px;
+  padding-bottom: 19px;
+  height: 40px;
+}
+
+/*author info*/
+/*----------*/
+.author-info{
+  text-align: right;
+}
+
+.author-info > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.author-info img{
+  width: 60px;
+  margin-left: 5px;
+}
+
+.author-info h5 {
+  margin: 0;
+}
+
+.author-info .publish-date {
+  font-weight: 400;
+}
+
+/* content  */
+/*----------*/
+
+.article-area{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.main-content p {
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+
+.related-article{
+
+}
+
+.related-article a {
+  color: #16a085;
+  text-decoration: none;
+  transition: all .1s;
+}
+
+.related-article a:hover{
+  color: #c0392b;
+
+}
+
+.topics {
+  font-size: 10px;
+}
+
+.topics a {
+  color: #3498db;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.topics a:hover{
+  border: 1px solid #999;
+}
+
+hr{
+  width: 150px;
+  margin: 50px auto;
+}
+
+
+
+  
