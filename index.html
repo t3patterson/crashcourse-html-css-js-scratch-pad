@@ -4,20 +4,67 @@
   <meta charset="UTF-8">
   <link rel="icon" href="./images/favicon.ico">
   <title>CSS Tutorial</title>
-  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <style>
+    * {box-sizing: border-box;}
+    div {font-size: 0; padding-top: 60px; margin: 0 auto;}
+    div > * {
+      display: block;
+      border: #ddd 1px solid;
+      vertical-align: middle;
+      text-align: left;
+      width: 220px; height: 220px;
+      margin: 10px auto;
+      font-size: 40px;
+      text-decoration: none;
+      color: #333;
+      font-family: Monaco, Courier, "monospace";
+      transition: all .2s;
+      border-radius: 50%;
+    }
+    
+    a:nth-child(1){
+      padding-top: 50px;
+      padding-left: 45px;
+    }
+
+    a:nth-child(2){
+      padding-top: 55px;
+      padding-left: 33px;
+    }
+
+     a:nth-child(3){
+      padding-top: 30px;
+      padding-left: 33px;
+    }
+
+    a:hover{color: #fff;}
+    a:nth-child(1):hover{
+      background: #e74c3c;
+    }
+    a:nth-child(2):hover{
+      background: #f1c40f;
+    }
+    a:nth-child(3):hover{
+      background: #2ecc71;
+    }
+
+  </style>
 </head>
 <body>
-  <div class="header-topic">
-    <h3>Watercooler</h3>
-  </div >
-  <section>
-    
-  </section>
-  <!-- content taken from: http://mashable.com/2015/12/03/cats-christmas-spirit/#6xkrE02gcsq3 -->
- 
-     
-<script src="./app.js">
-
- </script>
+  <div>  
+    <a href="./html-only.html">
+      &nbsp;HTML<br> 
+      &nbsp;ONLY
+    </a>
+    <a href="./html_css.html">
+      &nbsp;&nbsp;HTML <br>
+      + CSS
+    </a>
+    <a href="./html_css_js.html">
+       &nbsp;&nbsp;HTML <br>
+       + CSS <br>
+       + JS
+    </a>
+  </div>
 </body>
 </html>

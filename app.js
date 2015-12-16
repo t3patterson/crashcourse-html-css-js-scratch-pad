@@ -1,5 +1,4 @@
 "use strict"
-alert('hey')
 
 var posts = [
   {
