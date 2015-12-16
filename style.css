@@ -75,6 +75,15 @@ h1 {
   font-size: 12px;
 }
 
+.social .share-tw img,
+.social .share-fb img{
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  position: relative;
+  top: 5px;
+}
+
 .social .share-fb{
   background: #36a;
 }
@@ -104,6 +113,7 @@ h1 {
 .author-info img{
   width: 60px;
   margin-left: 5px;
+  border-radius: 50%;
 }
 
 .author-info h5 {
