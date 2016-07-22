@@ -4,6 +4,7 @@
 
 ###The Crash Course:  on Codepen 
 [Starting Point](http://codepen.io/tphdevdrop/pen/zBWrWG)
+
 [Complete Demo](http://codepen.io/tphdevdrop/pen/zBWkAk)  
 
 ###Explanation of Walkthrough (in codepen)
