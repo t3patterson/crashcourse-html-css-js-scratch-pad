@@ -1,32 +1,65 @@
-####1. Jesus where do we start? (10min)
-Kind of overwhelming and i don't wanna do this anymore.
-We will start with **font-family**
+#Javascript Crash Course - Magic 8Ball
+###Context: HTML | CSS | Javascript
+[Examples of the demo with HTML , HTML + CSS,  HTML + CSS + JavaScript](http://t3patterson.github.io/crashcourse-html-css-js-scratch-padl/)
+
+###The Crash Course:  on Codepen 
+[Starting Point](http://codepen.io/tphdevdrop/pen/zBWrWG)
+[Complete Demo](http://codepen.io/tphdevdrop/pen/zBWkAk)  
+
+###Explanation of Walkthrough (in codepen)
+#####HTML
+
+note: in codepen `div*398` + *tab* key will give you 398 div tags for the necessary 400 divs
+
+```html
+<h1>Scratch Pad</h1>
+
+<main id="canvas">
+  <div></div> 
+  <div class="show-selected"></div>
+  <!--div*398-->
+</main>
 ```
-body {
-    font-family: Helvetica;
+
+#####CSS
+```css
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Helvetica';
+  font-weight: 200;
+  border-bottom: 2px solid #67809F;
+}
+
+main {
+  /*background: lightgreen ... for demo of size*/
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+  margin: 0 auto;
+}
+
+div{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+}
+
+div.show-selected{
+  background: navy;
+  opacity: 1;
 }
 ```
-- let's get an easy win and get a seemingly near universaal style.
-- all the fonts are 'sans-serif'
-  + a 'serif' font has shoes and the 'sans-serif' font does not
-- We are going to use Helvetica: a very classic (and classy) sans-serif font
-  - most prominent use of Helvetica: the New York Subway System
-  - there's even a movie on it
-  - I personally find Helvetica highly agreeable, 5 out of 5 stars from me
 
-####A note on css syntax (the basic rule of css)
-1. HTML element selector 
-2. style-property
-3. style-value
 
-Certain styles 'cascade' down to child elements (like font-family, font-color, )
-
-####2. Let's do it again for the exception: (3min)
+#####JS
 ```
-h1 {
-    font-family: "Helvetica";
-    font-weight: 200;
+function showSelected(input){
+  var htmlEl = input.target
+  $(htmlEl).addClass('show-selected')
 }
-```
 
-####3. 
+$('div').on('click', showSelected)
+```
